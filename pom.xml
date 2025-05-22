@@ -20,5 +20,18 @@
             <artifactId>sqlite-jdbc</artifactId>
             <version>3.46.1.2</version>
         </dependency>
+        <dependency>
+            <groupId>at.favre.lib</groupId>
+            <artifactId>bcrypt</artifactId>
+            <version>0.10.2</version>
+        </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/JAK-JAR/SiteLab</url>
+        </repository>
+    </distributionManagement>
 </project>

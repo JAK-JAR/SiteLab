@@ -12,6 +12,9 @@ public class Main {
         DatabaseConnection db = new DatabaseConnection();
         db.connect("test.db");
         AccountManager am = new AccountManager(db);
-        am.register("user1", "test");
+        am.register("user2", "test");
+        System.out.println(am.authenticate("user2", "test"));
+        System.out.println(am.getAccount("user2"));
+        System.out.println(am.getAccount(2));
     }
 }
